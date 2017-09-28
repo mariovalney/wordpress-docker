@@ -26,7 +26,7 @@ Add a hostname to your docker IP.
 
 1. Get the container ID (first column): `docker ps`
 1. Inspect container: `docker inspect <container ID>`
-1. Go to your host file and add
+1. Go to your host file and add it (I always use dev subdomain)
 
 ### WP Config
 
@@ -65,7 +65,7 @@ define( 'WP_DEBUG_DISPLAY', false );
 
 ### File Permission
 
-If you have problems with file/folder permission you can add your user to `www-data` group and define the folder owner (recursively) to `your user:www-data`.
+If you have problems with file/folder permission you can add your user to `www-data` group and define the folder owner (recursively) to `youruser:www-data`.
 
 Then you can give 775/664 permission to WP files:
 
